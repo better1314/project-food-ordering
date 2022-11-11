@@ -17,4 +17,9 @@ public class CustomerController{
     public String doLogin(){
         return customerService.doLogin();
     }
+
+    @GetMapping(PREFIX_PATH +"registerCustomer")
+    public String registerCustomer(){
+        return "done register";
+    }
 }
